@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions &  Event</title>
+    <script>
+        function myFunction(){
+            document.getElementById('change').innerHTML="You fool hahahahahahhahah!!!";
+        }
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <p id="header">JavaScript Functions and Events</p>
+
+    <hr>
+    <p id="change">Click the button and see.</p>
+    <button id="fool" onclick="myFunction()">Click Me</button>
+    <hr>
+    <p id="get"> </p>
+    <button onclick="secondFunction()">Click Here</button>
+
+<hr>
+<p id="external"></p>
+<button onclick="externalFunction()">Try</button>
+
+<hr>
+
+<p id="sum"></p>
+<button onclick="document.getElementById('sum').innerHTML=5+6">try</button>
+
+<hr>
+<p>Document write</p>
+<button onclick="document.write(5+6)">try</button>
+
+<hr>
+<p>Alert Box</p>
+<button onclick="window.alert(5+6)">Try alert</button>
+<hr>
+<p>Console Option</p>
+<script>
+console.log(6+9);
+</script>
+<hr>
+
+    <script>
+        document.getElementById('header').style.textAlign='center';
+        document.getElementById('header').style.fontSize='35px';
+        document.getElementById('header').style.fontWeight='bold';
+        document.getElementById('header').style.textDecoration='underline';
+
+        function secondFunction(){
+            document.getElementById('get').innerHTML="this is second function";
+        }
+
+
+
+
+    </script>
+</body>
+</html>

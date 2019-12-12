@@ -9,5 +9,46 @@
 <body>
     <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click to get Date</button>
     <p id="demo">Result will be show here</p>
+
+    
+    <hr>
+    <p>Turn off and on javascript</p>
+
+<button onclick="document.getElementById('myImage').src='image/pic_bulbon.gif'">Turn On Bulb</button>
+<img src="image/pic_bulboff.gif" alt="default.png" id="myImage" width="100px">
+<button onclick="document.getElementById('myImage').src='image/pic_bulboff.gif'">Turn Off Bulb</button>
+<hr>
+<p id="demo1">Click this button and Change the font size.</p>
+<button onclick="document.getElementById('demo1').style.fontSize='35px'">Click here</button>
+<hr>
+<p id="demo2">Click button and see i am gone...hehe</p>
+<button onclick="document.getElementById('demo2').style.display='none'">Click</button>
+<hr>
+<p id="demo3" style='display: none;'>Hi... whats app.</p>
+<button onclick="document.getElementById('demo3').style.display='block'">Click me</button>
+<hr>
+<form action="" id='myform' style="display: none;">
+    <input type="text" name="" id="" value="hi">
+    <input type="text" name="" id="" value="hi">
+    <input type="text" name="" id="" value="hi">
+    <input type="submit" name="" id="" value="hi">
+
+</form>
+<button onclick="document.getElementById('myform').style.display='block'">Show Form</button>
+<hr>
+<p style='text-decoration: underline;'>Using script tag</p>
+
+<p id="demo4"></p>
+<hr>
+
+
+
+
+
+
+<!-- script tag here -->
+<script>
+document.getElementById('demo4').innerHTML='Hello Everyone';
+</script>
 </body>
 </html>
